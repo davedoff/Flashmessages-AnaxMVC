@@ -1,0 +1,19 @@
+{
+    "name": "dahc/flashmessages",
+    "type": "library",
+    "description": "Flashmessages plugin for Anax-MVC",
+    "keywords": ["flash", "messages", "education", "error", "warning", "info", "success"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Halldoff",
+            "email": "davidhalldoff@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": { "dahc\\": "src/" }
+    }
