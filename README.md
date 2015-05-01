@@ -18,7 +18,7 @@ The easiest way to install this is using composer. Add this to your composer.jso
 
 ```php
 $di->setShared('flashmessage', function() use ($di) {
-    $flashmessage = new \Dahc\Flashmessage\Flashmessage();
+    $flashmessage = new \dahc\Flashmessage\Flashmessage();
     $flashmessage->setDI($di);
     return $flashmessage;
 });
