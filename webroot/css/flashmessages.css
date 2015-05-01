@@ -1,0 +1,32 @@
+//
+//  Stylesheet for messages
+//
+
+.flashmessage {
+    border: 1px solid;
+    margin: 0.6em 0;
+    padding: 1em;
+    border-radius: 15px;
+    text-align: center;
+    color: #FFF;
+}
+
+.flashmessage-info {
+    background: #42B8DD;
+    border-color: #0FA9D8;
+}
+
+.flashmessage-warning {
+    background: #DF7514;
+    border-color: #DB6600;
+}
+
+.flashmessage-success {
+    background: #1CB841;
+    border-color: #00B229;
+}
+
+.flashmessage-error {
+    background: #CA3C3C;
+    border-color: #C60000;
+}
