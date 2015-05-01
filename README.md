@@ -43,5 +43,5 @@ Add this line to your view to display the message(s):
 
 ### Easy and quick way to use
 
-Copy the flash view to your view directory
+Copy the flash view to your view directory<br>
 Copy the css to your css directory and follow steps above
