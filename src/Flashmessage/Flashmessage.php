@@ -5,7 +5,7 @@ namespace Dahc\Flashmessage;
 /**
  * Flash messages stored in session for Anax MVC
  */
-class Flashmessage implements \Anax\DI\IInjectionAware
+class Flashmessage
 {
     use \Anax\DI\TInjectable;
 
