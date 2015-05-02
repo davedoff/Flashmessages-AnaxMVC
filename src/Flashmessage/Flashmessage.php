@@ -2,6 +2,7 @@
 
 namespace Dahc\Flashmessage;
 
+
 //
 // Flash messages for Anax-MVC
 //
