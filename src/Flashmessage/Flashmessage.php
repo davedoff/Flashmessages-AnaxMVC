@@ -2,65 +2,63 @@
 
 namespace Dahc\Flashmessage;
 
-/**
- * Flash messages stored in session for Anax MVC
- */
-class Flashmessage
+//
+// Flash messages for Anax-MVC
+//
+class Flashmessage implements \Anax\DI\IInjectionAware
 {
     use \Anax\DI\TInjectable;
 
-    private $cssClasses;
-    
-    /**
-     * Constructor
-     * @param array $cssClasses Message type CSS classes
-     */
+
+    //
+    //  Constructor
+    //
     public function __construct() {
-        
+
     }
 
 
-    /**
-     * Add info message
-     * @param string $message
-     */
+    //
+    // Adding an information message
+    // @param string $content
+    //
     public function Info($content)
     {
         $this->addMessage('info', $content);
     }
 
-    /**
-     * Add warning message
-     * @param string $message
-     */
+    //
+    // Adding a warning message
+    // @param string $content
+    //
     public function Warning($content)
     {
         $this->addMessage('warning', $content);
     }
 
-    /**
-     * Add success message
-     * @param string $message
-     */
+    //
+    // Adding a success message
+    // @param string $content
+    //
     public function Success($content)
     {
         $this->addMessage('success', $content);
     }
 
-    /**
-     * Add error message
-     * @param string $message
-     */
+    //
+    // Adding an error message
+    // @param string $content
+    //
     public function Error($content)
     {
         $this->addMessage('error', $content);
     }
 
-    /**
-     * Add custom type message
-     * @param string $type Message type
-     * @param string $message
-     */
+    //
+    // Adding your own message
+    // @param string $type(for example Warning)
+    // @param string $content
+    //
     public function addMessage($type, $content)
     {
         $messages = $this->session->get('flashmessage', []);
@@ -73,18 +71,17 @@ class Flashmessage
         $this->session->set('flashmessage', $messages);
     }
 
-    /**
-     * Delete all messages
-     */
+    //
+    // Clear all messages
+    //
     public function clearMessages()
     {
         $this->session->set('flashmessage', []);
     }
 
-    /**
-     * Get all flash messages as HTML and delete them
-     * @return string All flash messages as HTML
-     */
+    //
+    // @return string $html with messages as html
+    //
     public function getHtml()
     {
         $this->cssClasses = [
