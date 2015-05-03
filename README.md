@@ -1,3 +1,5 @@
+https://travis-ci.org/davedoff/Flashmessages-AnaxMVC.svg?branch=master
+
 Flashmessages for AnaxMVC
 =============
 
