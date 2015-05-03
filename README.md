@@ -1,4 +1,4 @@
-https://travis-ci.org/davedoff/Flashmessages-AnaxMVC.svg?branch=master
+[![Build Status](https://travis-ci.org/davedoff/Flashmessages-AnaxMVC.svg?branch=master)](https://travis-ci.org/davedoff/Flashmessages-AnaxMVC)
 
 Flashmessages for AnaxMVC
 =============
