@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/davedoff/Flashmessages-AnaxMVC.svg?branch=master)](https://travis-ci.org/davedoff/Flashmessages-AnaxMVC)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/davedoff/Flashmessages-AnaxMVC/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/davedoff/Flashmessages-AnaxMVC/?branch=master)
 
 Flashmessages for AnaxMVC
 =============
